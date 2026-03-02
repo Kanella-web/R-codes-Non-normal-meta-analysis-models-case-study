@@ -7,9 +7,9 @@ library(cmdstanr)
 check_cmdstan_toolchain(fix = TRUE, quiet = TRUE)
 check_cmdstan_toolchain()
 ## download the stan model
-####  normal-t(U) model
+####  t-distribution(b) model
 url <- "https://github.com/Kanella-web/R-codes-Non-normal-meta-analysis-models-case-study/raw/refs/heads/main/sk_mu_normal_t_U_SMDs.stan"
-file_sk_t_distr_U  <- "sk_mu_normal_t_U_MDs.stan"
+file_sk_t_distr_U  <- "sk_mu_normal_t_U_SMDs.stan"
 
 download.file(url,file_sk_t_distr_U  )
 
@@ -128,4 +128,5 @@ t_distr.res_SMDs1<-data.frame(median=median_sk_t_distr_U,
 # 
 # write.csv(t_distr.res_SMDs1 , "C:\\Users\\Lela Panag\\Desktop\\2nd PhD article\\data\\pre_term_data58\\STAN_models_58\\t_U_pred_58\\sk_res_SMDs_normal_t_pred_58.csv",row.names=FALSE )  
 # write.csv( deltatt_distr.res_SMDs , "C:\\Users\\Lela Panag\\Desktop\\2nd PhD article\\data\\pre_term_data58\\STAN_models_58\\t_U_pred_58\\sk_rel_eff_normal_t_pred_58.csv",row.names=FALSE )  
+
 

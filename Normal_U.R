@@ -42,6 +42,7 @@ writeLines("
     mu ~ dnorm(0, .0001) 
     
     ## or skeptical prior on mu
+    ### normal(b) model ###
     # mu~ dnorm(0, prec_mu)
     # prec_mu = 1 / (0.255)^2
     
@@ -172,4 +173,5 @@ res_NU_SMDs <- cbind.data.frame(mu_NU_SMDs, LB_mu_NU_SMDs, UB_mu_NU_SMDs, tau2_N
 # write.csv(res_NU_SMDs, "C:\\Users\\Lela Panag\\Desktop\\2nd PhD article\\data\\pre_term_data58\\Nomal_U_58\\2N_U_res_58SMDs.csv",row.names=FALSE )  
 # write.csv(lista_NU_SMDs, "C:\\Users\\Lela Panag\\Desktop\\2nd PhD article\\data\\pre_term_data58\\Nomal_U_58\\2rel_eff_N_U_58SMDs.csv",row.names=FALSE )  
 # 
+
 

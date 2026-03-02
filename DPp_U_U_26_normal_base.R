@@ -69,6 +69,7 @@ model {
 
    #basemu ~ dnorm(0, 0.0001)   
    ## or skeptical prior 
+   ## DP(f) model
    basemu ~ dnorm(0, prec_mu)
    prec_mu <- 1 / (0.255)^2
    
@@ -341,5 +342,6 @@ prob_DPp_U_U26_normal_base = round(max_values,2)
 # write.csv(listaDPp_U_U26_normal_base, "C:\\Users\\Lela Panag\\Desktop\\2nd PhD article\\data\\pre_term_data58\\DPp_U_U_58_pred\\corrections\\2rel_eff_DPp_26_U_U_normal_base.csv",row.names=FALSE )  
 # write.csv(prob_DPp_U_U26_normal_base, "C:\\Users\\Lela Panag\\Desktop\\2nd PhD article\\data\\pre_term_data58\\DPp_U_U_58_pred\\corrections\\2max_prob_cluster_DPp_26_U_U_normal_base.csv",row.names=FALSE )  
 #write.csv(DPpresults_U_U_26_normal_base, "C:\\Users\\Lela Panag\\Desktop\\2nd PhD article\\data\\pre_term_data58\\DPp_U_U_58_pred\\corrections\\2all_res_DPp_26_U_U_normal_base.csv",row.names=TRUE )  
+
 
 

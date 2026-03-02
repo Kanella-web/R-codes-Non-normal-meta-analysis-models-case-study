@@ -11,7 +11,7 @@ pre_term_data_58 = read.csv("https://github.com/Kanella-web/R-codes-Non-normal-m
 # ]
 
 library(metafor)
-# ################################## normal-ST(U) model #############################
+# ################################## Skew-t model #############################
 ## prepare for the stan model
 library(cmdstanr)
 check_cmdstan_toolchain(fix = TRUE, quiet = TRUE)
@@ -166,4 +166,5 @@ res1_ST_U<-data.frame(median=median_ST_U,
 
 write.csv(res1_ST_U , "C:\\Users\\Lela Panag\\Desktop\\2nd PhD article\\data\\pre_term_data58\\STAN_models_58\\ST_U_pred_58\\res_normal_ST_U_SMDs.csv",row.names=FALSE )  
 write.csv(deltaST_U , "C:\\Users\\Lela Panag\\Desktop\\2nd PhD article\\data\\pre_term_data58\\STAN_models_58\\ST_U_pred_58\\rel_eff_normal_ST_U_SMDs.csv",row.names=FALSE )  
+
 

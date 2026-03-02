@@ -11,7 +11,7 @@ pre_term_data_58 = read.csv("https://github.com/Kanella-web/R-codes-Non-normal-m
 #   pre_term_data_58$publication_year >= 2016,
 # ]
 
-############ FINITE NORMAL MIXTURE MODEL WITH DIRICHLET WEIGHTS AND SMDs ############
+############ Mixture of two normal distributions model ############
 library(R2jags)
 set.seed(1508)
 ####normal-2normal-mixture model###
@@ -469,4 +469,5 @@ clusters_fin_mix_norm_dw$extra_col = extra_col_cl
 # write.csv(res_fin_mix_norm_dw, "C:\\Users\\Lela Panag\\Desktop\\2nd PhD article\\data\\pre_term_data58\\two_normal_mix_58\\dir_weights\\gamma_comp_var\\tauinv2_gamma\\2gamma_comp_varres.csv",row.names=FALSE )  
 # write.csv(clusters_fin_mix_norm_dw, "C:\\Users\\Lela Panag\\Desktop\\2nd PhD article\\data\\pre_term_data58\\two_normal_mix_58\\dir_weights\\gamma_comp_var\\tauinv2_gamma\\2gamma_comp_varclusters.csv",row.names=FALSE )  
 # write.csv(lista_fin_mix_norm_dir_weigths, "C:\\Users\\Lela Panag\\Desktop\\2nd PhD article\\data\\pre_term_data58\\two_normal_mix_58\\dir_weights\\gamma_comp_var\\tauinv2_gamma\\2gamma_comp_varrel_eff.csv",row.names=FALSE )  
+
 

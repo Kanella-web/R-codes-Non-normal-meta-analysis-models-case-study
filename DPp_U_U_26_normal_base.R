@@ -67,11 +67,11 @@ model {
    basetau_sqr <- basetau * basetau
    basetau ~ dunif(0,10)  
 
-   #basemu ~ dnorm(0, 0.0001)   
+   basemu ~ dnorm(0, 0.0001)   
    ## or skeptical prior 
    ## DP(f) model
-   basemu ~ dnorm(0, prec_mu)
-   prec_mu <- 1 / (0.255)^2
+   #basemu ~ dnorm(0, prec_mu)
+   #prec_mu <- 1 / (0.255)^2
    
   # concentration parameter prior
   alpha ~ dunif(0.3, 5)

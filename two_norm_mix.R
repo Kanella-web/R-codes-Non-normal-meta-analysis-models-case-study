@@ -221,7 +221,7 @@ plot.delta.pi <- function(pi.bias, mu, tau,
 
 {
   
-  ## --- Posterior quantities (as in the paper)
+  ## --- Posterior quantities 
   p.bias.1 = pi.bias 
   delta <- mu[,2] - mu[,1]
 
@@ -246,7 +246,7 @@ plot.delta.pi <- function(pi.bias, mu, tau,
     geom_hline(yintercept =  cut.point, linetype = "dashed") +
     theme_bw()
   
-  ## KDE contours (same as original)
+  ## KDE contours
   
   dens <- kde2d(dat.post[ , 1], dat.post[ ,2], n = 50)
   dx <- diff(dens$x[1:2])

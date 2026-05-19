@@ -1,6 +1,5 @@
 ## load the data
 pre_term_data_61 = read.csv("https://github.com/Kanella-web/R-codes-Non-normal-meta-analysis-models-case-study/raw/refs/heads/main/preterm%20data/pre_term_data61.csv")
-#pre_term_data_61 = read.csv("C:\\Users\\Lela Panag\\Desktop\\2nd PhD article\\data\\pre_term_data58\\sens_61_studies\\pre_term_data61.csv")
 ### Binomial-DPp-26-N(U/Unif) ###
 library(R2jags)
 set.seed(1508)
